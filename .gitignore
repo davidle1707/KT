@@ -1,0 +1,23 @@
+# libs
+libs/*
+!libs/KT.**.dll
+!libs/checksum.dll
+
+# libs/netstandard2.0 -> will improve
+libs/netstandard2.0/*.pdb
+libs/netstandard2.0/*.json
+!/libs/netstandard2.0/
+
+# shared
+shared/.vs
+shared/*/bin
+shared/*/obj
+shared/*/logs
+shared/*/*.user
+
+# source
+src/.vs
+src/*/bin
+src/*/obj
+src/*/logs
+src/*/*.user

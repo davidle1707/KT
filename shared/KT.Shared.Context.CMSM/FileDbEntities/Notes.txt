@@ -1,0 +1,1 @@
+﻿db.FileExpires.createIndex( { "ExpiredAt": 1 }, { expireAfterSeconds: 0 } )

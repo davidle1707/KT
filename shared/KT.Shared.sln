@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KT.Shared.Context.CMSM", "KT.Shared.Context.CMSM\KT.Shared.Context.CMSM.shproj", "{202A1FDF-157E-497A-AC36-B9BF20384204}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KT.Shared.Dto.Scheduler", "KT.Shared.Dto.Scheduler\KT.Shared.Dto.Scheduler.shproj", "{7135A3ED-5B2B-41A6-8DE2-B34CE493E32D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KT.Shared.Dto.FileDB", "KT.Shared.Dto.FileDB\KT.Shared.Dto.FileDB.shproj", "{270865A9-9A54-4114-9360-947BA6F0B45F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KT.Shared.Dto.Send", "KT.Shared.Dto.Send\KT.Shared.Dto.Send.shproj", "{54952A03-199B-44AF-B617-7DF12E732F9F}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		KT.Shared.Context.CMSM\KT.Shared.Context.CMSM.projitems*{202a1fdf-157e-497a-ac36-b9bf20384204}*SharedItemsImports = 13
+		KT.Shared.Dto.FileDB\KT.Shared.Dto.FileDB.projitems*{270865a9-9a54-4114-9360-947ba6f0b45f}*SharedItemsImports = 13
+		KT.Shared.Dto.Send\KT.Shared.Dto.Send.projitems*{54952a03-199b-44af-b617-7df12e732f9f}*SharedItemsImports = 13
+		KT.Shared.Dto.Scheduler\KT.Shared.Dto.Scheduler.projitems*{7135a3ed-5b2b-41a6-8de2-b34ce493e32d}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D46D7E8-B3B7-4305-A909-E2CC028A1AEF}
+	EndGlobalSection
+EndGlobal

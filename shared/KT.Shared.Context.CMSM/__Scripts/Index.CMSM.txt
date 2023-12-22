@@ -1,0 +1,88 @@
+﻿// BusinessFiles
+db.BusinessFiles.createIndex( {"OrganizationId":1})
+db.BusinessFiles.createIndex( {"BusinessType":1})
+db.BusinessFiles.createIndex( {"FileNumber":1})
+db.BusinessFiles.createIndex( {"CreatedDate":1})
+db.BusinessFiles.reIndex()
+
+// BusinessFileShareData
+db.BusinessFileShareData.createIndex( {"PrimaryBorrower.Borrower.Info.FirstName":1, "PrimaryBorrower.Borrower.Info.LastName":1})
+db.BusinessFileShareData.createIndex( {"PrimaryBorrower.Borrower.Info.PersonalEmail":1, "PrimaryBorrower.Borrower.Info.WorkEmail":1})
+db.BusinessFileShareData.createIndex( {"PrimaryBorrower.Borrower.Info.CellPhone":1, "PrimaryBorrower.Borrower.Info.HomePhone":1, "PrimaryBorrower.Borrower.Info.WorkPhone":1})
+db.BusinessFileShareData.reIndex()
+
+// BusinessFilePrograms
+db.BusinessFilePrograms.createIndex( {FileId:1})
+db.BusinessFilePrograms.createIndex( {ShareDataId:1})
+db.BusinessFilePrograms.reIndex()
+
+// PortalBusinessFiles
+db.PortalBusinessFiles.createIndex( {"OrganizationId":1})
+db.PortalBusinessFiles.createIndex( {"ShareDataId":1})
+db.PortalBusinessFiles.createIndex( {"PrimaryBorrower.Borrower.Info.FirstName":1, "PrimaryBorrower.Borrower.Info.LastName":1})
+db.PortalBusinessFiles.reIndex()
+
+// BusinessFileNotes
+db.BusinessFileNotes.createIndex( {BusinessFileId:1})
+db.BusinessFileNotes.createIndex( {NoteType:1})
+db.BusinessFileNotes.createIndex( {CreatedDate:1})
+db.BusinessFileNotes.createIndex( {ModifiedDate:1})
+db.BusinessFileNotes.reIndex()
+
+// BusinessFileLogs
+db.BusinessFileLogs.createIndex( {BusinessFileId:1})
+db.BusinessFileLogs.createIndex( {ShareDataId:1})
+db.BusinessFileLogs.createIndex( {CreatedDate:1})
+db.BusinessFileLogs.createIndex( {ModifiedDate:1})
+db.BusinessFileLogs.reIndex()
+
+// CustomTriggers
+db.CustomTriggers.createIndex( {OrganizationId:1})
+db.CustomTriggers.createIndex( {BusinessType:1})
+db.CustomTriggers.createIndex( {IsActive:1})
+db.CustomTriggers.createIndex( {TriggerStageId:1})
+db.CustomTriggers.createIndex( {TriggerStatusId:1})
+db.CustomTriggers.reIndex()
+
+// GenericDocuments
+db.GenericDocuments.createIndex( {OrganizationId:1})
+db.GenericDocuments.createIndex( {BusinessType:1})
+db.GenericDocuments.createIndex( {IsActive:1})
+db.GenericDocuments.reIndex()
+
+// TimedTriggerLogs
+db.TimedTriggerLogs.createIndex( {BusinessFileId:1})
+db.TimedTriggerLogs.createIndex( {CustomTriggerId:1})
+db.TimedTriggerLogs.reIndex()
+
+// LoginLogs
+db.LoginLogs.createIndex( {CreatedDate:1})
+db.LoginLogs.createIndex( {LoginType:1})
+db.LoginLogs.createIndex( {OrganizationId:1})
+db.LoginLogs.reIndex()
+
+// BrokerApplications
+db.BrokerApplications.createIndex( {CreatedDate:1})
+db.BrokerApplications.createIndex( {AppStatus:1})
+db.BrokerApplications.createIndex( {"Company.Status":1})
+db.BrokerApplications.reIndex()
+
+// LoanProducts
+db.LoanProducts.createIndex( {OrganizationId:1})
+db.LoanProducts.createIndex( {IsActive:1})
+db.LoanProducts.createIndex( {LoanTypes:1, LoanTerms:1})
+db.LoanProducts.createIndex( {IsInterestOnly:1})
+db.LoanProducts.reIndex()
+
+// ReceiveBusinessFileLogs
+db.ReceiveBusinessFileLogs.createIndex( {OrganizationId:1})
+db.ReceiveBusinessFileLogs.createIndex( {UserId:1})
+db.ReceiveBusinessFileLogs.createIndex( {ReceivedDate:1})
+db.ReceiveBusinessFileLogs.reIndex()
+
+// PhoneLogs
+db.PhoneLogs.createIndex( {_t:1})
+db.PhoneLogs.createIndex( {CreatedDate:1})
+db.PhoneLogs.createIndex( {OrganizationId:1})
+db.PhoneLogs.createIndex( {FromSource:1})
+db.PhoneLogs.reIndex()

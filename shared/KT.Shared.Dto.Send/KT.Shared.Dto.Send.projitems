@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>54952a03-199b-44af-b617-7df12e732f9f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>KT.Shared.Dto.Send</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Client\ClientOthers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client\Save.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Email\Others.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Email\Find.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Inc\OtpSetting.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Otp\Verify.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Otp\Send.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Email\Send.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sms\Send.cs" />
+  </ItemGroup>
+</Project>

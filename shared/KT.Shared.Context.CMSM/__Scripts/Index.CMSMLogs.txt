@@ -1,0 +1,16 @@
+﻿db.QueueJobs.createIndex( {CreatedDate:1})
+db.QueueJobs.createIndex( {OrganizationId:1})
+db.QueueJobs.createIndex( {Name:1})
+db.QueueJobs.reIndex()
+
+db.LendingQbMappingResults.createIndex( {OrgId:1})
+db.LendingQbMappingResults.createIndex( {FileNumber:1})
+db.LendingQbMappingResults.createIndex( {LendingQbNumber:1})
+db.LendingQbMappingResults.reIndex()
+
+db.OtpTransactions.createIndex( {CreatedDate:1})
+db.OtpTransactions.createIndex( {OrganizationId:1})
+db.OtpTransactions.createIndex( {ForType:1})
+db.OtpTransactions.createIndex( {ForId:1})
+db.OtpTransactions.createIndex( {Status:1})
+db.OtpTransactions.reIndex()
